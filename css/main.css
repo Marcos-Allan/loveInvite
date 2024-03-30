@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Press+Start+2P&display=swap');
+
+:root {
+    --color-1: #ff3535;
+    --color-2: #262626;
+    --color-3: #ffffff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Caveat", Arial;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+body {
+    width: 100vw;
+    overflow: hidden;
+    height: 100vh;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > h1 {
+    color: var(--color-3);
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    top: 5%;
+    text-transform: capitalize;
+}
+
+body > main {
+    background-color: var(--color-2);
+    padding: 15px;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 400px;
+    position: relative;
+}
+
+body > main > section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > main > section > img.img {
+    width: 160px;
+    height: 130px;
+}
+
+body > main > h1 {
+    color: var(--color-1);
+    font-weight: 700;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+body > main > button {
+    border: none;
+    margin: 5px;
+    width: 140px;
+    height: 30px;
+    outline: none;
+    background-color: var(--color-3);
+    border-radius: 4px;
+    padding: 4px;
+    color: var(--color-2);
+    border: 1px solid var(--color-3);
+    cursor: pointer;
+    transition: all .2s;
+}
+
+body > main > button.recused {
+    z-index: 2;
+    transition: left .7s, top .7s;
+}
+
+body > section#modal {
+    position: fixed;
+    padding: 15px;
+    top: -100%;
+    transition: top 2s;
+    left: 0%;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+}
+
+body > section#modal > h1 {
+    color: var(--color-2);
+    font-size: 2em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+body > section#modal > button.byebye {
+    border: none;
+    outline: none;
+    padding: 10px 50px;
+    border-radius: 4px;
+    color: var(--color-3);
+    background-color: var(--color-1);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+body > section#modal > button.byebye:hover {
+    background-color: #ffffff;
+    color: var(--color-1);
+    border: 1px solid var(--color-1);
+}
